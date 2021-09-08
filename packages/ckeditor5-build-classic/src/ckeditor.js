@@ -31,6 +31,10 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -61,6 +65,10 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Alignment,
+	FontBackgroundColor,
+	FontColor,
+	FontFamily,
+	FontSize,
 ];
 
 // Editor configuration.
@@ -86,6 +94,10 @@ ClassicEditor.defaultConfig = {
 			'redo',
 			'|',
 			'alignment',
+			'fontBackgroundColor',
+			'fontColor',
+			'fontFamily',
+			'fontSize',
 		],
 	},
 	image: {
